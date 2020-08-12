@@ -1,0 +1,89 @@
+@base-margin: 20px;
+@base-padding: 10px;
+
+@input-height: 36px;
+@input-width: 300px;
+@input-font-color: gray;
+@input-font-size: 14px;
+@checkbox-size: 24px;
+
+/* product title */
+.profile_title_div {
+  margin-left: @base-margin;
+}
+
+.profile_title {
+  /*padding: @base-padding;*/
+}
+/* product title */
+
+
+/* label & input */
+.input_div {
+  margin: @base-padding @base-padding + @base-margin;
+}
+
+.input_label {
+  font-size: 24px;
+}
+
+.name_input {
+  height: @input-height;
+  width: @input-width;
+  margin-top: @base-padding;
+  color: @input-font-color;
+  font-size: @input-font-size;
+  padding-left: @base-padding;
+}
+
+.gender_input {
+  height: @input-height;
+  width: @input-width;
+  margin-top: @base-padding;
+  color: @input-font-color;
+  font-size: @input-font-size;
+  padding-left: @base-padding;
+}
+
+.description_input {
+  height: @input-height * 2;
+  width: @input-width;
+  margin-top: @base-padding;
+  color: @input-font-color;
+  font-size: @input-font-size;
+  padding-left: @base-padding;
+  padding-top: @base-padding;
+}
+
+.check_input_div {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.check_input {
+  height: @checkbox-size;
+  width: @checkbox-size;
+
+  margin-right: @base-padding;
+}
+/* label & input */
+
+
+/* submit */
+.submit_module_div {
+  display: flex;
+  justify-content: center;
+
+  margin: @base-margin * 1.5 0;
+}
+
+.submit_module_div > input {
+  height: 40px;
+  width: 160px;
+  background: dodgerblue;
+  font-size: 1.2em;
+  color: white;
+  border: 0;
+}
+/* submit */
