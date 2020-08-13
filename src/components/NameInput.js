@@ -14,6 +14,7 @@ class NameInput extends React.Component {
           className={'name_input'}
           type={'text'} id={'name'}
           value={this.props.nameStr}
+          placeholder={'Your name'}
           onChange={(event) => this.props.onChange('name', event)}
         />
       </div>

@@ -9,9 +9,9 @@ import ProfileTitle from "./ProfileTitle";
 
 class MyProfile extends Component {
   state = {
-    name: 'Your name',
+    name: '',
     gender: 'Male',
-    description: 'Description about yourself',
+    description: '',
     isRead: false,
   }
 

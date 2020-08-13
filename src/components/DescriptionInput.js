@@ -8,6 +8,7 @@ class DescriptionInput extends React.Component {
           className={'description_input'}
           name={'description'}
           value={this.props.desc}
+          placeholder={'Description about yourself'}
           onChange={(event) => this.props.onChange('description', event)}
         />
       </div>
