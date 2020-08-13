@@ -44,7 +44,7 @@ class MyProfile extends Component {
                 <CheckProduct isRead={this.state.isRead} onChange={this.onCheckboxChange}/>
               </div>
 
-              <SubmitModule isRead={this.state.isRead}/>
+              <SubmitModule isRead={this.state.isRead} checkDisabled={this.checkDisabled()}/>
             </form>
           </section>
         </main>
@@ -71,6 +71,10 @@ class MyProfile extends Component {
     this.setState({
       isRead: event.target.checked,
     });
+  }
+
+  checkDisabled = () => {
+    return !this.state.name || !this.state.gender || !this.state.description || !this.state.isRead;
   }
 }
 
